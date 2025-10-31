@@ -10,7 +10,8 @@ use serde_json;
 use reqwest::{self, Response};
 
 use jsonwebtokens as jwt;
-use jwt::{Algorithm, AlgorithmID, Verifier, VerifierBuilder};
+use jwt::{Algorithm, AlgorithmID, VerifierBuilder};
+pub use jwt::Verifier;
 
 mod error;
 pub use error::{Error, ErrorDetails};
